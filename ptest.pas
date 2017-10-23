@@ -72,7 +72,6 @@ begin
     nop ; nop; nop; nop;
 
     dec eax
-    test eax,eax
     jnz @@1
   end;
   QueryPerformanceCounter(pc2{%H-});
