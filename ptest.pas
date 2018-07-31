@@ -200,6 +200,19 @@ begin
   WriteLn('Array : ',RANDOM_ARRAY_LEN,'*',Low(ARRAY_BASE_TYPE),'..',High(ARRAY_BASE_TYPE));
   WriteLn('Repeat: ',TEST_REPEAT,' times');
 
+  //DoTest(@uOpt3.CaseAsm,  'O3 case-asm');
+  //DoTest(@uOpt3.CaseAsm2, 'O3 case-asm2');
+  //DoTest(@uOpt3.ArrayNop, 'O3 array-nop');
+  //DoTest(@uOpt0.ArrayQPC, 'O0 array-qpc');
+  //DoTest(@uOpt3.ArrayQPC, 'O3 array-qpc');
+
+  {DoTest(@uOpt0.CompareByte1,  'O0 compare-byte-1');
+  DoTest(@uOpt1.CompareByte1,  'O1 compare-byte-1');
+  DoTest(@uOpt3.CompareByte1,  'O3 compare-byte-1');
+  DoTest(@uOpt0.CompareByte2,  'O0 compare-byte-2');
+  DoTest(@uOpt1.CompareByte2,  'O1 compare-byte-2');
+  DoTest(@uOpt3.CompareByte2,  'O3 compare-byte-2');
+
   DoTest(@uOpt0.RandomArray, 'O0 random-array');
   DoTest(@uOpt0.Case5,       'O0 case-of-5');
   DoTest(@uOpt0.Case5Else,   'O0 case-of-5-else');
@@ -215,7 +228,7 @@ begin
   Recalibrate;
   DoTest(@uOpt3.RandomArray, 'O3 random-array');
   DoTest(@uOpt3.Case5,       'O3 case-of-5');
-  DoTest(@uOpt3.Case5Else,   'O3 case-of-5-else');
+  DoTest(@uOpt3.Case5Else,   'O3 case-of-5-else');  }
   DoTest(@uOpt3.Case20,      'O3 case-of-20');
   DoTest(@uOpt3.Case20Else,  'O3 case-of-20-else');
 
@@ -227,5 +240,6 @@ begin
   DoTest(@uOpt4.Case20Else,  'O4 case-of-20-else');
 
   WriteLn('Done.');
+  REadln;
 end.
 
