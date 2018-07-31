@@ -27,7 +27,7 @@
         <Mode0 Name="default"/>
       </Modes>
     </RunParams>
-    <Units Count="7">
+    <Units Count="8">
       <Unit0>
         <Filename Value="ptest.pas"/>
         <IsPartOfProject Value="True"/>
@@ -56,6 +56,11 @@
         <Filename Value="uOpt4.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="umicrobench.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMicrobench"/>
+      </Unit7>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
